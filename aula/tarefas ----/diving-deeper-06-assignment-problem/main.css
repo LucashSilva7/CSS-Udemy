@@ -1,0 +1,25 @@
+
+html,
+body{
+    height: 100%;
+}
+
+.box-box{
+    background-color: rgba(50, 102, 102, 0.603);
+    border: 5px solid rgb(1, 49, 49);
+    border-radius: 0px 20px 0px 20px;
+}
+
+#box-one{
+    height: 100%;
+    width: 50%;
+    
+}
+
+div{
+    display: inline-block;
+}
+
+span:focus{
+    color: rgb(255, 0, 0);
+}
