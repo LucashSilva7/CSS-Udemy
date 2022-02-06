@@ -1,7 +1,7 @@
 
 
 #product-overview {
-    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url("images/freedom.jpg") left 10% bottom 70%/cover no-repeat border-box, #ff1b68;
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url("images/freedom.jpg") center/cover no-repeat border-box, #ff1b68;
     /*
     gradientes, imagens, e cores solidas devem ser separadas por virgula!
     background image
@@ -18,42 +18,53 @@
     position: relative;
 }
 
+
+#product-overview h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 40rem){
+    #product-overview{
+        height: 40vh;
+        background-position: 50% 25%;
+
+    }
+
+    #product-overview h1{
+        font-size: 3rem;
+    }
+    
+}
+
+
 .section-title {
     color: #2ddf5c;
     text-align: center;
 }
 
-#product-overview > h1{
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-}
-
-#product-overview h1 {
-    color: white;
-    font-family: 'Anton', sans-serif;
-}
-
+/*
 .plan__list {
-    width: 80%;
-    margin: auto;
+    width: 100%;
     text-align: center;
-}
+}*/
 
 .plan {
     background: #d5ffdc;
     text-align: center;
-    padding: 16px;
-    margin: 8px;
-    display: inline-block;
-    width: 30%;
-    vertical-align: middle;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
 }
 
 .plan--highlighted {
     background: #19b84c;
     color: white;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);*/
 }
 
 .plan__annotation {
